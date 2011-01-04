@@ -7,6 +7,7 @@ Nothing values (DMarsh: done)
 uniform access principle (DMarsh: Done)
 named/default args (DMarsh: done)
 Tuples - syntax  (DMarsh: done)
+Pattern Matching (DMarsh: done ?? Should we add more)
 Preconditions (DMarsh: Done)
 Functions returning functions
 Functions taking functions
