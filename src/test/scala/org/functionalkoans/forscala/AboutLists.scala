@@ -10,18 +10,22 @@ class AboutLists extends KoanSuite with ShouldMatchers {
     val b: List[Int] = Nil
 
     (a == Nil) should be(true)
-    (a eq Nil) should be(true)
-
     (b == Nil) should be(true)
-    (b eq Nil) should be(true)
-
     (a == b) should be(true)
-    (a eq b) should be(true)
+    
   }
 
   koan("Lists are easily created") {
     val a = List(1, 2, 3)
     a should equal(List(1, 2, 3))
+  }
+
+  koan("Eq tests identity (same object)") {
+    val a = List(1, 2, 3)
+    val b = List(1, 2, 3)
+
+
+    (a eq b) should be(false)
   }
 
   koan("Lists can be accessed via head and tail") {
